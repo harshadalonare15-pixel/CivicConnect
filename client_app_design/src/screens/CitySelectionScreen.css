@@ -1,0 +1,48 @@
+.city-selection-container {
+  background: linear-gradient(135deg, #e0f2f7 0%, #c2e0f0 100%);
+}
+
+.city-selection-card {
+  max-width: 700px;
+  width: 100%;
+  border-radius: 1.5rem;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+}
+
+.city-selection-card .text-primary {
+  color: #007bff !important;
+}
+
+.city-selection-card .badge.bg-success {
+  background-color: #28a745 !important;
+}
+
+.city-list-scroll {
+  max-height: 300px; /* Adjust as needed */
+  overflow-y: auto;
+  padding-right: 10px; /* For scrollbar */
+}
+
+.city-item {
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border-radius: 1rem;
+  border: 1px solid #e9ecef;
+}
+
+.city-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.city-item.active-city {
+  border-color: #007bff;
+  box-shadow: 0 4px 15px rgba(0, 123, 255, 0.2);
+}
+
+.city-item.active-city .card-title,
+.city-item.active-city .card-text {
+  color: #007bff !important;
+}

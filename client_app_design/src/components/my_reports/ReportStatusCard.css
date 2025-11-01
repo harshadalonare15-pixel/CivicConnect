@@ -1,0 +1,45 @@
+.report-status-card .stepper-wrapper {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.75rem;
+  margin-top: 1rem;
+}
+
+.report-status-card .step {
+  text-align: center;
+  color: #adb5bd;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  background: rgba(173,181,189,0.1);
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.report-status-card .step.completed {
+  color: #0d6efd;
+  background: linear-gradient(135deg, rgba(13,110,253,0.1) 0%, rgba(13,110,253,0.05) 100%);
+  box-shadow: 0 2px 8px rgba(13,110,253,0.2);
+}
+
+.report-status-card .step.completed::after {
+  content: '✓';
+  position: absolute;
+  top: -5px;
+  right: -5px;
+  width: 16px;
+  height: 16px;
+  background: linear-gradient(135deg, #198754 0%, #0f5132 100%);
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.6rem;
+  font-weight: bold;
+  box-shadow: 0 2px 8px rgba(25,135,84,0.3);
+}
+
+.report-status-card .progress-bar {
+  background: linear-gradient(135deg, #0d6efd 0%, #0056b3 100%);
+  transition: width 0.5s ease;
+}

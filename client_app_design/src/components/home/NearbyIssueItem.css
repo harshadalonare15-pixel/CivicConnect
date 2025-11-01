@@ -1,0 +1,18 @@
+.nearby-issue-item {
+  background-color: #ffffff;
+  border: 1px solid #e0e0e0;
+  border-radius: 0.75rem;
+  padding: 1rem;
+  margin-bottom: 0.75rem; /* Add some space between items */
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  transition: all 0.2s ease-in-out;
+}
+
+.nearby-issue-item:hover {
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  transform: translateY(-2px);
+}
+
+.nearby-issue-item:last-child {
+  margin-bottom: 0; /* No margin for the last item */
+}
